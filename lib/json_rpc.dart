@@ -48,7 +48,7 @@ class JsonRPC extends RpcService {
       headers: {'Content-Type': 'application/json'},
       body: json.encode(requestPayload),
     );
-
+    print(response.body);
     final data = json.decode(response.body) as Map<String, dynamic>;
     final id = data['id'] as int;
 
