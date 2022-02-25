@@ -7,6 +7,7 @@ import '../../utils/length_tracking_byte_sink.dart';
 import 'arrays.dart';
 import 'tuple.dart';
 import 'types.dart';
+import 'material'
 
 enum ContractFunctionType {
   function,
@@ -269,8 +270,8 @@ class ContractFunction {
   List<dynamic> decodeReturnValues(String data) {
     final tuple = TupleType(outputs.map((p) => p.type).toList());
     final buffer = hexToBytes(data).buffer;
-    debugPrint("Un-Decoded Return Value:");
-    debugPrint(data);
+    print("Un-Decoded Return Value:");
+    print(data);
     final parsedData = tuple.decode(buffer, 0);
     return parsedData.data;
   }
