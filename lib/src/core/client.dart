@@ -351,9 +351,9 @@ class Web3Client {
       atBlock: atBlock,
     );
 
-    print("ENCODED_RESULT")
-    print(encodedResult)
-    print('----------')
+    print("ENCODED_RESULT");
+    print(encodedResult);
+    print('----------');
 
     return function.decodeReturnValues(encodedResult);
   }
