@@ -7,7 +7,6 @@ import '../../utils/length_tracking_byte_sink.dart';
 import 'arrays.dart';
 import 'tuple.dart';
 import 'types.dart';
-import 'material'
 
 enum ContractFunctionType {
   function,
