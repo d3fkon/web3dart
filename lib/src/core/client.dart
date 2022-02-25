@@ -352,7 +352,7 @@ class Web3Client {
     );
 
     print("ENCODED_RESULT");
-    print(encodedResult);
+    print(encodedResult.toString());
     print('----------');
 
     return function.decodeReturnValues(encodedResult);
