@@ -269,7 +269,8 @@ class ContractFunction {
   List<dynamic> decodeReturnValues(String data) {
     final tuple = TupleType(outputs.map((p) => p.type).toList());
     final buffer = hexToBytes(data).buffer;
-
+    debugPrint("Un-Decoded Return Value:");
+    debugPrint(data);
     final parsedData = tuple.decode(buffer, 0);
     return parsedData.data;
   }
